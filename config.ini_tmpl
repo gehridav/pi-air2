@@ -1,0 +1,16 @@
+[Global]
+MeasureInterval: <interval_in_sec>
+
+[InfluxDb]
+Host: <host.domain>
+Port: <dbport>
+Dbname: <dbname>
+User: <username>
+Password: <password>
+Session: <sessionname>
+Device: <devicename>
+Location: <location>
+RunPrefix: <runprefix>
+
+[TempSensor]
+Gpio: <gpio_nr>
