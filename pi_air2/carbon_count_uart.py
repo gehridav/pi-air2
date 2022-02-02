@@ -54,7 +54,7 @@ def main():
 
     # Initialize sensors
     cO2Sensor = Co2(UART.CO2())
-    dhtSensor = Dht(adafruit_dht.DHT22(board.D24))
+    dhtSensor = Dht(adafruit_dht.DHT22(eval("board.D"+config['TempSensor']['Gpio'])))
     # Initialize InfluxDb client
     client = InfluxDBClient(config.get('InfluxDb','Host'), config.get('InfluxDb','Port'), config.get('InfluxDb','User'), config.get('InfluxDb','Password'), config.get('InfluxDb','Dbname'), True, True)
 
