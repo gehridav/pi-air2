@@ -47,7 +47,7 @@ class Co2(Sensor):
     
 
 def main():
-    print("Start PI-Air measurment")
+    print("Start PI-Air measurement")
     # Load configuration
     config = configparser.ConfigParser()
     config.read('config.ini')
