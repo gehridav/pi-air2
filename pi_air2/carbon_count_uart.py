@@ -107,7 +107,6 @@ def main():
                 for sensor in sensors:
                     measurement.fields.update(sensor.measure())
                 client.write_points([vars(measurement)])
-                print([vars(measurement)])
 
             except Exception as ex:
                 print(ex.args[0])
